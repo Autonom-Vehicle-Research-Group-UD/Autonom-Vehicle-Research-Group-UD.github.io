@@ -33,10 +33,10 @@
         <div class="row">
             <div class="col">
                 <div class="text-center">
-                    <h2 style="color: #000000; margin-top: 50px;">Data cleansing</h2>
+                    <h2 style="color: #000000; margin-top: 50px;">Resolution independent camera sens</h2>
                     <p style="color: #000; margin: 20px; text-align: justify;">
-                        <img ALIGN="left" style="padding-right: 20px;max-width: 300px;" alt="Map" src="../img/datacleaning.jpg" />
-                        One of the most important part of the development of self-driving vehicles is large, reliable and properly labeled data. Data that meets these criteria can only be produced at the cost of hundreds or even thousands of hours of work by experienced people, and this time can grow exponentially as we want to create a database that meets more and more criteria. As part of the data cleansing project, we aim to minimize this cost and time-consuming process. As a solution, we have created a binary classifier neural network that can learn from the already validated database which of the newly processed data we consider valuable and which types of data are still missing. With this solution, we successfully reduced the time that required for data cleaning and partially automated the process of creating a learning database.
+                        <img ALIGN="left" style="padding-right: 20px;max-width: 300px;" src="../img/data-cleansing-map.jpeg" />
+                        Driving with autonomous vehicles adapts different cameras for different purposes. The application of the different types of cameras causes differences among sensor signals. The other situation that has to be considered is the sensor signal degradation. One of the symptoms of sensor signal degradation is the distorted or very limited size of resolution leads to a very tight region of interest. In this situation, it is a not surprising requirement is able to handle variable size of images input. We cannot have traditional learning models, because it does not handle changing the size of the input. We can resize or crop the pictures, but we also lose information. We developed a new Convolutional and LSTM (Long Short-Term Memory) based model which doesn't need fixed-size resolution. With the convolution, we can expand the information in between the dimensions and the LSTM layers can remember the previous stages. 
                     </p>
                 </div>
             </div>
